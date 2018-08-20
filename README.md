@@ -1,6 +1,6 @@
 # aspNetCore2-Secrets
 Secure your Asp.Net Core 2 application using secret.json
- Store your application secrets in secret.json file.
+Store your application secrets in secret.json file. Right click on your .Net Core project and the Manage User Secrets to open the secret.json file. 
 
 ### The file is not on the source control.
 You can store your:
