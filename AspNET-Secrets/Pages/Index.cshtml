@@ -1,0 +1,21 @@
+﻿@page
+<!-- Inject Configurations -->
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Hi Below you can see from secret.json:</h2>
+
+<h3>Blob Key: @Configuration["MyBlobStorageKey"]</h3>
+
+<h3>Email: @Configuration["MyEmail"]</h3>
+
+<h3>Blog: <a href="@Configuration["MyBlog"]" target="_blank">Infocodify.com</a></h3>
+
+<h3>LinkedIn: <a href="@Configuration["MyLinkedin"]" target="_blank">LinkedIn</a></h3>
+
+<h3>GitHub: <a href="@Configuration["MyGithub"]" target="_blank">Infocodify GitHub</a></h3>
